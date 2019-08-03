@@ -1,7 +1,7 @@
 $(function() {
     let header = $("<header></header>");
     let main = $("<main></main>");
-    let footer = $("<footer></footer>");
+    let footer = $(`<footer class = "py-5 bg-dark" ></footer>`);
     let nav = $(`<nav class = "navbar navbar-expand-lg navbar-dark bg-dark fixed-top"></nav>`);
     let divcont = $("<div></div>");
     let divnavleft = $("<div></div>");
@@ -18,13 +18,46 @@ $(function() {
     let h1 = (`<h1 class = "display-3">A Warm Welcome!</h1>`);
     let pelem = $(`<p class = "text-secondary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, ipsam, eligendi, in quo sunt possimus non incidunt odit vero aliquid similique quaerat nam nobis illo aspernatur vitae fugiat numquam repellat.</p>`)
     let button = $(`<button class = "btn btn-primary btn-lg mb-4">Call to action!</button>`);
+    /* Card */
     let divrow = $(`<div class = "row text-center"></div>`);
-    let colrow1 = $(`<div class = "col-lg-3 col-md-6 mb-4"></div>`);
+    let divrow1 = $(`<div class = "container col-3 mb-4"></div>`);
     let divcard = $(`<div class = "card h-100"></div>`);
-
-
-
-
+    let img = $(`<img class = "card-img-top" src = "http://placehold.it/500x325">`);
+    let divbody = $(`<div class = "card-body"></div>`);
+    let h4 = $(`<h4 class = "card-title">Card title</h4>`);
+    let pbody = $(`<p class = "card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque.</p>`);
+    let divfooter = $(`<div class = "card-footer"></div>`)
+    let afooter = $(`<a class = "btn btn-primary text-white">Find out more!</a>`);
+    // let divrow2 = $(`<div class = "row text-center"></div>`);
+    let divrow2 = $(`<div class = "container col-3 mb-4"></div>`);
+    let divcard1 = $(`<div class = "card h-100"></div>`);
+    let img1 = $(`<img class = "card-img-top" src = "http://placehold.it/500x325">`);
+    let divbody1 = $(`<div class = "card-body"></div>`);
+    let h41 = $(`<h4 class = "card-title">Card title</h4>`);
+    let pbody1 = $(`<p class = "card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque.</p>`);
+    let divfooter1 = $(`<div class = "card-footer"></div>`)
+    let afooter1 = $(`<a class = "btn btn-primary text-white">Find out more!</a>`);
+    // let divrow = $(`<div class = "row text-center"></div>`);
+    let divrow3 = $(`<div class = "container col-3 mb-4"></div>`);
+    let divcard2 = $(`<div class = "card h-100"></div>`);
+    let img2 = $(`<img class = "card-img-top" src = "http://placehold.it/500x325">`);
+    let divbody2 = $(`<div class = "card-body"></div>`);
+    let h42 = $(`<h4 class = "card-title">Card title</h4>`);
+    let pbody2 = $(`<p class = "card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque.</p>`);
+    let divfooter2 = $(`<div class = "card-footer"></div>`)
+    let afooter2 = $(`<a class = "btn btn-primary text-white">Find out more!</a>`);
+    // let divrow = $(`<div class = "row text-center"></div>`);
+    let divrow4 = $(`<div class = "container col-3 mb-4"></div>`);
+    let divcard3 = $(`<div class = "card h-100"></div>`);
+    let img3 = $(`<img class = "card-img-top" src = "http://placehold.it/500x325">`);
+    let divbody3 = $(`<div class = "card-body"></div>`);
+    let h43 = $(`<h4 class = "card-title">Card title</h4>`);
+    let pbody3 = $(`<p class = "card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque.</p>`);
+    let divfooter3 = $(`<div class = "card-footer"></div>`)
+    let afooter3 = $(`<a class = "btn btn-primary text-white">Find out more!</a>`);
+    let divcontainer = $(`<div class = "container"></div>`);
+    let divfooterlast = $(`<div class = "container"></div>`);
+    let pfooterlast = $(`<p class = "m-0 text-center text-white">Copyright © Your Website 2019</p>`)
 
 
 
@@ -68,9 +101,37 @@ $(function() {
     $("#divright").append(ul);
     $(ul).append(lihome, liabout, liservices, licontact);
     $(main).append(divintro);
-    $(divintro).append(h1, pelem, button)
-
-
+    $(divintro).append(h1, pelem, button);
+    /*Card*/
+    $(main).append(divcontainer);
+    $(divcontainer).append(divrow);
+    $(divrow).append(divrow1);
+    $(divrow1).append(divcard);
+    $(divcard).append(img, divbody);
+    $(divbody).append(h4, pbody);
+    $(divcard).append(divfooter);
+    $(divfooter).append(afooter);
+    $(divrow).append(divrow2);
+    $(divrow2).append(divcard1);
+    $(divcard1).append(img1, divbody1);
+    $(divbody1).append(h41, pbody1);
+    $(divcard1).append(divfooter1);
+    $(divfooter1).append(afooter1);
+    $(divrow).append(divrow3);
+    $(divrow3).append(divcard2);
+    $(divcard2).append(img2, divbody2);
+    $(divbody2).append(h42, pbody2);
+    $(divcard2).append(divfooter2);
+    $(divfooter2).append(afooter2);
+    $(divrow).append(divrow4);
+    $(divrow4).append(divcard3);
+    $(divcard3).append(img3, divbody3);
+    $(divbody3).append(h43, pbody3);
+    $(divcard3).append(divfooter3);
+    $(divfooter3).append(afooter3)
+        /* Footer */
+    $("footer").append(divfooterlast);
+    $(divfooterlast).append(pfooterlast);
 
 
 
